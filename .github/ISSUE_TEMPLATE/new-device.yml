@@ -27,7 +27,7 @@ body:
     id: test
     attributes:
       label: Can you test a build on it?
-      description: We can only support it after a test.
+      description: I can only support it after a test.
       options:
         - "Yes"
         - "No"
