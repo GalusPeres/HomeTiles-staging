@@ -1,16 +1,7 @@
-name: Report a problem or an idea
-description: Something does not work, an idea, or a new device.
+name: Bug
+description: Something does not work.
+labels: [bug]
 body:
-  - type: dropdown
-    id: kind
-    attributes:
-      label: What is it about
-      options:
-        - Something does not work
-        - An idea or a wish
-        - Support for a new device
-    validations:
-      required: true
   - type: dropdown
     id: device
     attributes:
@@ -37,8 +28,6 @@ body:
         - Guition JC4880P443C_I_W
         - Guition ESP32-4848S040C_I
         - Golden Security GS-T3E v2 (PCB v2.3)
-        - Not listed (new device)
-        - Not about one device
     validations:
       required: true
   - type: input
