@@ -50,14 +50,17 @@ body:
     id: description
     attributes:
       label: Description
-      description: What happens, what you expected, and the steps to get there.
+      description: What goes wrong, and how to make it happen again.
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
       label: Logs
-      description: "After a crash or restart: Web Admin > Settings > Screenshot & Diagnostics > Download crash log and Download core dump (put the core dump in a .zip). Live log over USB: [Device logs](https://galusperes.github.io/device-logs/)."
+      description: |
+        - After a crash or restart: Web Admin > Settings > Screenshot & Diagnostics > crash log and core dump (core dump as .zip, it can contain entity names)
+        - Live log over USB: [Device logs](https://galusperes.github.io/device-logs/)
+        - Home Assistant log: Settings > System > Logs, filter `tab5_lvgl`
   - type: textarea
     id: pictures
     attributes:
