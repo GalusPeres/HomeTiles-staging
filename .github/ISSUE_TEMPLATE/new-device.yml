@@ -1,5 +1,5 @@
-name: New device
-description: A display that HomeTiles does not support yet.
+name: New device support
+description: A display board that HomeTiles does not support yet.
 labels: [enhancement]
 body:
   - type: input
