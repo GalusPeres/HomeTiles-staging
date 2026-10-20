@@ -6,27 +6,28 @@ body:
     id: model
     attributes:
       label: Exact model
-      placeholder: ESP32-P4-WIFI6-Touch-LCD-7B
+      description: From the rear label or the shop page.
     validations:
       required: true
   - type: input
     id: link
     attributes:
       label: Product page
-      placeholder: https://
+      description: The manufacturer's page with wiki, schematic or demo code.
     validations:
       required: true
   - type: input
     id: chip
     attributes:
-      label: Chip revision (esptool.py chip_id)
-      placeholder: ESP32-P4 (revision v1.3)
+      label: Chip revision
+      description: The output of `esptool.py chip_id`.
     validations:
       required: true
   - type: dropdown
     id: test
     attributes:
       label: Can you test a build on it?
+      description: A board is only supported once someone has tested it.
       options:
         - "Yes"
         - "No"
