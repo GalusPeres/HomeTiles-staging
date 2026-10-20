@@ -1,33 +1,33 @@
 name: New device support
-description: A display board that HomeTiles does not support yet.
+description: A display that HomeTiles does not support yet.
 labels: [enhancement]
 body:
   - type: input
     id: model
     attributes:
       label: Exact model
-      description: From the rear label or the shop page.
+      description: From the label on the back.
     validations:
       required: true
   - type: input
     id: link
     attributes:
       label: Product page
-      description: The manufacturer's page with wiki, schematic or demo code.
+      description: Link to the maker's page.
     validations:
       required: true
   - type: input
     id: chip
     attributes:
       label: Chip revision
-      description: The output of `esptool chip-id`.
+      description: Run `esptool chip-id`.
     validations:
       required: true
   - type: dropdown
     id: test
     attributes:
       label: Can you test a build on it?
-      description: A board is only supported once someone has tested it.
+      description: We can only support it after a test.
       options:
         - "Yes"
         - "No"
