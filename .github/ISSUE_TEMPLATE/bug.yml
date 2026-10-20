@@ -2,6 +2,9 @@ name: Bug report
 description: Something does not work.
 labels: [bug]
 body:
+  - type: markdown
+    attributes:
+      value: "**The more logs, the faster it can be fixed.**"
   - type: dropdown
     id: device
     attributes:
@@ -58,7 +61,6 @@ body:
     attributes:
       label: Logs
       description: |
-        **The more logs, the faster it can be fixed.**
         - Crash: Web Admin > Settings > Screenshot & Diagnostics. Add the crash log and the core dump (as .zip).
         - Live log: [Device logs](https://galusperes.github.io/device-logs/) (USB)
         - Home Assistant: Settings > System > Logs, search `tab5_lvgl`
