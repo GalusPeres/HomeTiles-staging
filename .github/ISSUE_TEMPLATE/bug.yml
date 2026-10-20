@@ -6,7 +6,9 @@ body:
     id: device
     attributes:
       label: Device
+      description: The image you flashed.
       options:
+        - Choose your device
         - M5Stack Tab5
         - Waveshare 4B / 86 Panel
         - Waveshare Touch LCD 4.3 inch
@@ -34,29 +36,30 @@ body:
     id: firmware
     attributes:
       label: HomeTiles version
-      placeholder: 0.9.3
+      description: Web Admin > Settings > System
     validations:
       required: true
   - type: input
     id: bridge
     attributes:
       label: HomeTiles Bridge version
-      placeholder: 0.9.3
+      description: Home Assistant > HACS
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
       label: Description
-      placeholder: What happens, and how to get there
+      description: What happens, what you expected, and the steps to get there.
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
       label: Logs
-      description: "[How to get them](https://galusperes.github.io/faq/#the-display-crashed-or-restarted-by-itself)"
+      description: "Crash log, panel log or Home Assistant log. [How to get them](https://galusperes.github.io/faq/#the-display-crashed-or-restarted-by-itself)"
   - type: textarea
     id: pictures
     attributes:
       label: Photos or screenshots
+      description: A photo of the panel helps with display problems.
