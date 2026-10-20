@@ -1,5 +1,5 @@
-name: Bug
-description: Something does not work.
+name: Bug report
+description: Something on the panel or in the Web Admin does not work.
 labels: [bug]
 body:
   - type: dropdown
