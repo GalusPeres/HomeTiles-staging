@@ -15,7 +15,6 @@ body:
     id: device
     attributes:
       label: Device
-      description: The image you flashed.
       options:
         - M5Stack Tab5
         - Waveshare 4B / 86 Panel
@@ -46,38 +45,28 @@ body:
     id: firmware
     attributes:
       label: HomeTiles version
-      description: Web Admin > Settings > System, for example 0.9.3. "none" if it is not installed.
+      placeholder: 0.9.3
     validations:
       required: true
   - type: input
     id: bridge
     attributes:
       label: HomeTiles Bridge version
-      description: Home Assistant > HACS > HomeTiles Bridge, for example 0.9.3. "none" if it is not installed.
+      placeholder: 0.9.3
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        - **Something does not work:** what happens, and the steps to get there.
-        - **An idea:** what you want to do and how it could look.
-        - **A new device:** exact model, product page and `esptool.py chip_id`.
   - type: textarea
     id: description
     attributes:
       label: Description
+      placeholder: What happens, and how to get there
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        - **Crash log:** Web Admin > Settings > Screenshot & Diagnostics > Download crash log
-        - **Panel log:** [Device logs](https://galusperes.github.io/device-logs/) (USB, Chrome or Edge)
-        - **Home Assistant log:** Settings > System > Logs
   - type: textarea
     id: logs
     attributes:
       label: Logs
+      description: "[How to get them](https://galusperes.github.io/faq/#the-display-crashed-or-restarted-by-itself)"
   - type: textarea
     id: pictures
     attributes:
