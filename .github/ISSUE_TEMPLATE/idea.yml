@@ -1,0 +1,15 @@
+name: Idea
+description: A new tile, popup or setting.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: What you want to do, and how it could look
+    validations:
+      required: true
+  - type: textarea
+    id: pictures
+    attributes:
+      label: Sketch or example
