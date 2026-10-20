@@ -1,0 +1,34 @@
+name: New device
+description: A display that HomeTiles does not support yet.
+labels: [enhancement]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Exact model
+      placeholder: ESP32-P4-WIFI6-Touch-LCD-7B
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Product page
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: chip
+    attributes:
+      label: Chip revision (esptool.py chip_id)
+      placeholder: ESP32-P4 (revision v1.3)
+    validations:
+      required: true
+  - type: dropdown
+    id: test
+    attributes:
+      label: Can you test a build on it?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
