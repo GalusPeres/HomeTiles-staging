@@ -39,7 +39,7 @@ body:
     id: firmware
     attributes:
       label: HomeTiles version
-      description: "Display: Settings > System. Web Admin: at the top."
+      description: "Device: Settings > System. Web Admin: at the top."
     validations:
       required: true
   - type: input
