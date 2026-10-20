@@ -2,6 +2,12 @@ name: New device support
 description: A device that HomeTiles does not support yet.
 labels: [enhancement]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        **Only complete devices (display and board in one).**
+
+        **ESP32-S3: only with a 480x480 px screen.**
   - type: input
     id: model
     attributes:
