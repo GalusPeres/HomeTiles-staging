@@ -6,10 +6,11 @@ body:
     id: description
     attributes:
       label: Description
-      placeholder: What you want to do, and how it could look
+      description: What you want to do at home, and how it could look.
     validations:
       required: true
   - type: textarea
     id: pictures
     attributes:
       label: Sketch or example
+      description: A drawing, a screenshot, or how another app does it.
