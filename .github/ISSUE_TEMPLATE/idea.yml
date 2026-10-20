@@ -1,16 +1,16 @@
 name: Feature request
-description: An idea for a new tile, popup or setting.
+description: An idea for HomeTiles.
 labels: [enhancement]
 body:
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: What you would like to have, and how it could look.
+      description: What do you want? How could it look?
     validations:
       required: true
   - type: textarea
     id: pictures
     attributes:
       label: Sketch or example
-      description: A drawing, a screenshot, or how another app does it.
+      description: A drawing or a screenshot.
