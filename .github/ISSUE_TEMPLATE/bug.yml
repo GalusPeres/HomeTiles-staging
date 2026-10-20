@@ -1,12 +1,12 @@
 name: Bug report
-description: Something on the panel or in the Web Admin does not work.
+description: Something does not work.
 labels: [bug]
 body:
   - type: dropdown
     id: device
     attributes:
       label: Device
-      description: The image you flashed.
+      description: Your display.
       options:
         - Choose your device
         - M5Stack Tab5
@@ -36,21 +36,21 @@ body:
     id: firmware
     attributes:
       label: HomeTiles version
-      description: Web Admin > Settings > System
+      description: Shown in Settings > System.
     validations:
       required: true
   - type: input
     id: bridge
     attributes:
       label: HomeTiles Bridge version
-      description: HACS > HomeTiles Bridge
+      description: Shown in HACS.
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: What goes wrong, and how to make it happen again.
+      description: What goes wrong? What did you do before?
     validations:
       required: true
   - type: textarea
@@ -58,11 +58,11 @@ body:
     attributes:
       label: Logs
       description: |
-        - After a crash or restart: Web Admin > Settings > Screenshot & Diagnostics > crash log and core dump (core dump as .zip, it can contain entity names)
-        - Live log over USB: [Device logs](https://galusperes.github.io/device-logs/)
-        - Home Assistant log: Settings > System > Logs, filter `tab5_lvgl`
+        - Crash: Web Admin > Settings > Screenshot & Diagnostics. Add the crash log and the core dump (as .zip).
+        - Live log: [Device logs](https://galusperes.github.io/device-logs/) (USB)
+        - Home Assistant: Settings > System > Logs, search `tab5_lvgl`
   - type: textarea
     id: pictures
     attributes:
       label: Photos or screenshots
-      description: A photo of the panel helps with display problems.
+      description: A photo of the screen helps.
