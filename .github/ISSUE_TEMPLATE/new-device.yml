@@ -20,7 +20,7 @@ body:
     id: chip
     attributes:
       label: Chip revision
-      description: The output of `esptool.py chip_id`.
+      description: The output of `esptool chip-id`.
     validations:
       required: true
   - type: dropdown
