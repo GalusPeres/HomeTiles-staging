@@ -56,24 +56,28 @@ body:
       description: Home Assistant > HACS > HomeTiles Bridge, for example 0.9.3. "none" if it is not installed.
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        - **Something does not work:** what happens, and the steps to get there.
+        - **An idea:** what you want to do and how it could look.
+        - **A new device:** exact model, product page and `esptool.py chip_id`.
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: |
-        Something does not work: what happens, what you expected, and the steps to get there (tile type, entity, what you tap).
-        An idea: what you want to do at home and how it could look.
-        A new device: the exact model from the rear label, the product page and the output of `esptool.py chip_id`.
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        - **Crash log:** Web Admin > Settings > Screenshot & Diagnostics > Download crash log
+        - **Panel log:** [Device logs](https://galusperes.github.io/device-logs/) (USB, Chrome or Edge)
+        - **Home Assistant log:** Settings > System > Logs
   - type: textarea
     id: logs
     attributes:
-      label: Crash log and logs
-      description: |
-        - Crash log: Web Admin > Settings > Screenshot & Diagnostics > Download crash log
-        - Panel log: [Device logs](https://galusperes.github.io/device-logs/) (USB, Chrome or Edge)
-        - Home Assistant log: Settings > System > Logs
+      label: Logs
   - type: textarea
     id: pictures
     attributes:
