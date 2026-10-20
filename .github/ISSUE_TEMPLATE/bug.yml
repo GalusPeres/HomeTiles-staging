@@ -4,7 +4,7 @@ labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: "**The more logs, the faster it can be fixed.**"
+      value: "**Please add logs. They help to fix the problem faster.**"
   - type: dropdown
     id: device
     attributes:
