@@ -9,7 +9,7 @@ body:
     id: device
     attributes:
       label: Device
-      description: Your display.
+      description: As chosen in the installer.
       options:
         - Choose your device
         - M5Stack Tab5
@@ -39,14 +39,14 @@ body:
     id: firmware
     attributes:
       label: HomeTiles version
-      description: Shown in Settings > System.
+      description: "Display: Settings > System. Web Admin: at the top."
     validations:
       required: true
   - type: input
     id: bridge
     attributes:
       label: HomeTiles Bridge version
-      description: Shown in HACS.
+      description: In HACS > HomeTiles Bridge.
     validations:
       required: true
   - type: textarea
@@ -61,7 +61,7 @@ body:
     attributes:
       label: Logs
       description: |
-        - Crash: Web Admin > Settings > Screenshot & Diagnostics. Add the crash log and the core dump (as .zip).
+        - Crash: Web Admin > Settings > Screenshot & Diagnostics. Add the crash log, and the core dump if shown (as .zip).
         - Live log: [Device logs](https://galusperes.github.io/device-logs/) (USB)
         - Home Assistant: Settings > System > Logs, search `tab5_lvgl`
   - type: textarea
