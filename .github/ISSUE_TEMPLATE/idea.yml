@@ -6,7 +6,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: What you want to do at home, and how it could look.
+      description: What you would like to have, and how it could look.
     validations:
       required: true
   - type: textarea
