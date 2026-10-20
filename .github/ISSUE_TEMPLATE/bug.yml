@@ -57,7 +57,7 @@ body:
     id: logs
     attributes:
       label: Logs
-      description: "Crash log: Web Admin > Settings > Screenshot & Diagnostics. Live log over USB: [Device logs](https://galusperes.github.io/device-logs/)."
+      description: "After a crash or restart: Web Admin > Settings > Screenshot & Diagnostics > Download crash log and Download core dump (put the core dump in a .zip). Live log over USB: [Device logs](https://galusperes.github.io/device-logs/)."
   - type: textarea
     id: pictures
     attributes:
