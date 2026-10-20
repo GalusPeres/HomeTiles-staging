@@ -58,7 +58,7 @@ body:
     attributes:
       label: Logs
       description: |
-        **We can only help quickly with logs.**
+        **The more logs you add, the faster I can help.**
         - Crash: Web Admin > Settings > Screenshot & Diagnostics. Add the crash log and the core dump (as .zip).
         - Live log: [Device logs](https://galusperes.github.io/device-logs/) (USB)
         - Home Assistant: Settings > System > Logs, search `tab5_lvgl`
