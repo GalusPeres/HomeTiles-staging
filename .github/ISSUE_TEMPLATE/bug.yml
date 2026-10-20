@@ -71,7 +71,9 @@ body:
     attributes:
       label: Crash log and logs
       description: |
-        If the panel restarted or froze: right after the restart, Web Admin > Settings > Screenshot & Diagnostics > "Download crash log", and drop the file here. Home Assistant log: Settings > System > Logs, filter "tab5_lvgl".
+        - Crash log: Web Admin > Settings > Screenshot & Diagnostics > Download crash log
+        - Panel log: [Device logs](https://galusperes.github.io/device-logs/) (USB, Chrome or Edge)
+        - Home Assistant log: Settings > System > Logs
   - type: textarea
     id: pictures
     attributes:
