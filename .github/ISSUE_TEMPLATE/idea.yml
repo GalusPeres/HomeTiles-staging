@@ -1,5 +1,5 @@
-name: Idea
-description: A new tile, popup or setting.
+name: Feature request
+description: An idea for a new tile, popup or setting.
 labels: [enhancement]
 body:
   - type: textarea
